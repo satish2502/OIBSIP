@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Registration Form</h2>
+        <form id="registerForm">
+            <label for="name">Name:</label>
+            <div class="name">
+            <input type="text" placeholder="First Name" id="firstName" required>
+            &emsp;
+            <input type="text" placeholder="Middle Name" id="middleName">
+            &emsp;
+            <input type="text" placeholder="Last Name" id="lastName" required>
+            &emsp;
+            </div>
+            <label for="Email Id">Email Id:</label>
+            <input type="email" placeholder="Enter Email" id="registerEmail" required>
+            <label for="Phone No">Phone No:</label>
+            <input type="tel" placeholder=" Enter Phone" id="phone" required>
+            <label for="gender">Gender:</label>
+            <select id="gender">
+                <option value=""></option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select> <br>
+            <label for="City">City:</label>
+            <br>
+            <select id="City">
+                <option value=""></option>
+                <option value="Pune">Pune</option>
+                <option value="Chennai">Chennai</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Jaipur">Jaipur</option>
+                <option value="Hyderabad">Hyderabad</option>
+                <option value="Bengluru">Bengluru</option>
+            </select>
+            <label for="State">State:</label>
+            <select id="State">
+                <option value=""></option>
+                <option value="Maharastra">Maharastra</option>
+                <option value="Punjab">Punjab</option>
+                <option value="Gujarat">Gujarat</option>
+                <option value="Andhra Pradesh">Andhra Pradesh</option>
+                <option value="Kerala">Kerala</option>
+                <option value="Uttar Pradesh">Uttar Pradesh</option>
+            </select>
+            <label for="Password">Password:</label>
+            <input type="password" placeholder=" Enter password" id="registerPassword" required>
+            <label for="Confirm Password">Confirm Password:</label>
+            <input type="password" placeholder=" Enter confirm password" id="registerPassword" required>
+            <br> <br>
+            <button type="submit">Register</button>
+        </form>
+        <p>&emsp; Already have an account? <a href="login.html"> Go to Login</a></p>
+    </div>
+    <script src="register.js"></script>
+</body>
+</html>
